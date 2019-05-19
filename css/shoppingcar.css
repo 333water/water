@@ -1,0 +1,205 @@
+@import "base.css";
+html {
+    font-size: 100px; }
+
+body {
+    font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px; }
+}
+.head{
+    width: 100%;
+    height: 0.88rem;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+    background: #fdfff8;
+    font-size: 0.38rem;
+    line-height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0 0.03rem 0.43rem 0 rgba(41,167,255,0.13) ;
+}
+.head >a{
+    color: #4ebbfe;
+}
+.head span{
+    color:#4ebbfe ;
+}
+.list{
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    bottom: 0rem;
+    overflow: hidden;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+    background: #fdfff8;
+    font-size: 0.38rem;
+    line-height: 0.88rem;
+}
+.list .scroll .listItem{
+    height: auto;
+    min-height: 2rem;
+    background: #5b54ff;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    display: flex;
+}
+.scroll .listItem a{
+    width: 100%;
+    height: auto;
+    background: #fdfff8;
+    box-sizing: border-box;
+    display: flex;
+}
+.scroll .listItem a .shuilongtou{
+    width: 1.82rem;
+    height: 1.82rem;
+    margin:0.2rem;
+    background: #f5bd87;
+    flex: none;
+}
+.listItem .rightbox{
+    width: auto;
+    height: 100%;
+    min-width: 5rem;
+    background: #fdfff8;
+}
+.rightbox .longtou{
+    width: 2.15rem;
+    height: 0.28rem;
+    font-size: 0.3rem;
+    margin-right: 0.2rem;
+}
+.rightbox .number{
+    width: 1.28rem;
+   float: right;
+}
+.number img{
+    width: 0.34rem;
+    height: 0.34rem;
+}
+.number i{
+    width: 0.23rem;
+    height: 0.18rem;
+    font-size: 0.26rem;
+    font-style: normal;
+    color: #41b2fc;
+}
+.number .price{
+    width: 0.51rem;
+    height: 0.18rem;
+    font-size: 0.26rem;
+}
+.choose{
+    width: 100%;
+    height: 0.8rem;
+    background: #fdfff8;
+    position: absolute;
+    bottom: 1.1rem;
+}
+.choose img{
+    width: 0.24rem;
+    height: 0.24rem;
+    margin-right: 0.14rem;
+}
+.choose img:hover{
+    background: #36d681;
+}
+.choose .wenzi{
+    width: 0.49rem;
+    height: 0.23rem;
+    font-size: 0.24rem;
+    color: #41b2fc;
+}
+.bottom{
+    width: 100%;
+    height: 1.08rem;
+    position: fixed;
+    right: 0rem;
+    bottom: 0rem;
+    background: #fdfff8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom .total{
+    width: 2.48rem;
+    height: 0.81rem;
+    background: #fdfff8;
+    display: flex;
+    flex-direction: column;
+}
+.bottom .total .up{
+    width: 100%;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    color: #41b2fc;
+}
+.bottom .total .up::before {
+    content: '';
+    position: absolute;
+    width: 0.06rem;
+    height: 0.06rem;
+    left: 0.14rem;
+    top: 0.36rem;
+    border-radius: 50%;
+    background: #41b2fc;
+}
+.total .up .heji{
+    width: 0.60rem;
+    height: 0.23rem;
+    font-size: 0.24rem;
+}
+.total .up .totalprice{
+    width: 0.82rem;
+    height: 0.26rem;
+    font-size: 0.36rem;
+    font-weight: bolder;
+}
+.bottom .total .down{
+    width: 2.5rem;
+    height: 0.19rem;
+    font-size: 0.20rem;
+    line-height: 0.19rem;
+    margin-top: 0.2rem;
+    color: #41b2fc;
+}
+.bottom .total .down::before {
+    content: '';
+    position: absolute;
+    width: 0.06rem;
+    height: 0.06rem;
+    left: 0.14rem;
+    top: 0.8rem;
+    border-radius: 50%;
+    background: #41b2fc;
+}
+.bottom .xiadan{
+    width: 3.8rem;
+    height: 0.6rem;
+    background: #f5bd87;
+}
+.bottom .xiadan img{
+    width: 100%;
+    height: 100%;
+}

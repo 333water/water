@@ -1,0 +1,137 @@
+@import "base.css";
+html {
+    font-size: 100px; }
+
+body {
+    font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px; } }
+.head{
+    width: 100%;
+    height: 0.88rem;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+    background: #55eeff;
+    font-size: 0.38rem;
+    line-height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+}
+.head >a{
+    color: #4ebbfe;
+}
+.order{
+    height: 0.88rem;
+    padding: 0 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    color: #4ebbfe;
+    font-size: 0.22rem;
+    line-height: 0.88rem;
+}
+.order >li .iconfont{
+    font-size: 0.22rem;
+    margin-left: 0.2rem;
+}
+.list{
+    width: 100%;
+    position: absolute;
+    /*不写父元素 相对于整个页面定位*/
+    top: 2rem;
+    /*量出来是1.76 但是为了与上面有一点间距所以写大一点*/
+    bottom: 0rem;
+    overflow: hidden;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+    background: #fdfff8;
+    font-size: 0.38rem;
+    line-height: 0.88rem;
+}
+.list .scroll .listItem{
+    height: 1.74rem;
+    background: #5b54ff;
+    margin-bottom: 0.66rem;
+}
+.scroll .listItem a{
+    width: 100%;
+    height: 1.74rem;
+    background: #fdfff8;
+    box-sizing: border-box;
+    display: flex;
+}
+.scroll .listItem a img{
+    width: 1.18rem;
+    height: 1.18rem;
+    margin:0.28rem;
+}
+.listItem .rightbox{
+    width: auto;
+    height: 100%;
+    min-width: 4rem;
+    background: #fdfff8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list .scroll .listItem  h6{
+    width: 1.34rem;
+    height: 0.4rem;
+    margin-left: 0.27rem;
+    line-height:0.4rem;
+    font-size: 0.3rem;
+    /*background: #f5bd87;*/
+}
+.listItem >a .rightbox .one{
+    width: 4rem;
+    height: 0.4rem;
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.27rem;
+    /*background: #f3a6ff;*/
+
+}
+.listItem >a .rightbox .one li{
+    margin-right: 0.4rem;
+}
+.listItem >a .rightbox .two{
+    width: 4rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.27rem;
+    line-height: 0.4rem;
+    /*background: #55eeff;*/
+}
+.listItem >a .rightbox .two li{
+    margin-right: 0.4rem;
+}
+.listItem >a .rightbox p{
+    width: 1.02rem;
+    height: 0.4rem;
+    font-size: 0.22rem;
+    opacity: 0.4;
+    margin-left: 0.27rem;
+    line-height: 0.4rem;
+    /*background: #99cc99;*/
+}
