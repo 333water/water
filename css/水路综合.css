@@ -29,7 +29,7 @@ body {
     height: 0.88rem;
     padding: 0 0.22rem;
     box-sizing: border-box;
-    background: #55eeff;
+    background: #fdfff8;
     font-size: 0.38rem;
     line-height: 0.88rem;
     display: flex;
@@ -37,6 +37,9 @@ body {
 }
 .head >a{
     color: #4ebbfe;
+}
+.head span{
+    color:#4ebbfe ;
 }
 .order{
     height: 0.88rem;
@@ -46,10 +49,6 @@ body {
     color: #4ebbfe;
     font-size: 0.22rem;
     line-height: 0.88rem;
-}
-.order >li .iconfont{
-    font-size: 0.22rem;
-    margin-left: 0.2rem;
 }
 .list{
     width: 100%;
@@ -63,75 +62,90 @@ body {
     box-sizing: border-box;
     background: #fdfff8;
     font-size: 0.38rem;
-    line-height: 0.88rem;
 }
 .list .scroll .listItem{
     height: 1.74rem;
-    background: #5b54ff;
-    margin-bottom: 0.66rem;
+    background: #fdfff8;
+    /*margin-bottom: 0.66rem;*/
 }
-.scroll .listItem a{
+.listItem >a {
+    display: flex;
     width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0.33rem;
+}
+.thumb{
+    height: 1.74rem;
+    background: #99cc99;
+    width: 1.74rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+.info{
     height: 1.74rem;
     background: #fdfff8;
+    margin-left: 1.74rem;
+    padding-left: 0.26rem;
     box-sizing: border-box;
-    display: flex;
-}
-.scroll .listItem a img{
-    width: 1.18rem;
-    height: 1.18rem;
-    margin:0.28rem;
-}
-.listItem .rightbox{
-    width: auto;
-    height: 100%;
-    min-width: 4rem;
-    background: #fdfff8;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.list .scroll .listItem  h6{
-    width: 1.34rem;
-    height: 0.4rem;
-    margin-left: 0.27rem;
-    line-height:0.4rem;
-    font-size: 0.3rem;
-    /*background: #f5bd87;*/
+.info >h1{
+    font-size: 0.28rem;
+    color: rgba(0,0,0,0.6);
+    font-weight: normal;
+    /*line-height: 50%;*/
 }
-.listItem >a .rightbox .one{
-    width: 4rem;
-    height: 0.4rem;
-    font-size: 0.26rem;
-    line-height: 0.4rem;
-    display: flex;
-    flex-direction: row;
-    margin-left: 0.27rem;
-    /*background: #f3a6ff;*/
-
-}
-.listItem >a .rightbox .one li{
-    margin-right: 0.4rem;
-}
-.listItem >a .rightbox .two{
-    width: 4rem;
-    height: 0.4rem;
-    font-size: 0.24rem;
-    display: flex;
-    flex-direction: row;
-    margin-left: 0.27rem;
-    line-height: 0.4rem;
-    /*background: #55eeff;*/
-}
-.listItem >a .rightbox .two li{
-    margin-right: 0.4rem;
-}
-.listItem >a .rightbox p{
-    width: 1.02rem;
-    height: 0.4rem;
+.info .score{
     font-size: 0.22rem;
-    opacity: 0.4;
-    margin-left: 0.27rem;
-    line-height: 0.4rem;
-    /*background: #99cc99;*/
+    color: #333333;
+    /*line-height: 100%;*/
+}
+.info .score >span{
+    position: relative;
+    padding-left: 0.14rem;
+    margin-right: 0.58rem;
+}
+.info .score >span::before{
+    content: '';
+    position: absolute;
+    width: 0.06rem;
+    height: 0.06rem;
+    left: 0;
+    top: 0.14rem;
+    border-radius: 50%;
+    background: #36a8fe;
+}
+.info .score strong{
+    font-size: 0.26rem;
+    color: #36a8fe;
+}
+.info .tag{
+    font-size: 0.20rem;
+    color: #36a8fe;
+    /*line-height: 100%;*/
+}
+.info .tag span{
+    color:#36a8fe ;
+    background: rgba(59,171,255,0.1);
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.info .total{
+    font-size: 0.20rem;
+    color: rgba(0,0,0,0.3);
+    line-height: 100%;
+}
+.info .price{
+    position: absolute;
+    font-size: 0.26rem;
+    right: 0;
+    bottom: 0;
+    color: #fbb548;
 }
