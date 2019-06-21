@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./swiper-4.5.0/swiper-4.5.0/dist/css/swiper.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="header">
+    书城
+</div>
+<div class="search">
+    <span>分类﹀</span>
+    <a href=""></a>
+</div>
+<div class="banner swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./img/p8.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/p11.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/p13.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/p7.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/p31.jpg" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+</div>
+<ul class="category">
+    <li><a href="水路综合.html" >
+        <div src=""><img src="./img/index.jpg" alt=""></div>
+        <p>书城首页</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="./img/p41.jpg" alt=""></div>
+        <p>电子书</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="./img/p42.jpg" alt=""></div>
+        <p>网络文学</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="./img/p43.jpg" alt=""></div>
+        <p>特色书单</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="./img/43.jpg" alt=""></div>
+        <p>热门作者</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="./img/618.jpg" alt=""></div>
+        <p>618狂推</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="./img/p21.jpg" alt=""></div>
+        <p>客服中心</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="./img/p23.jpg" alt=""></div>
+        <p>其他</p>
+    </a>
+    <li><a href="">
+        <div src=""><img src="" alt=""></div>
+        <p></p>
+    </a>
+</ul>
+<div class="nav">
+    <a href="" class="hot">
+        <img src="./img/sy.png" alt="">
+        <p>首页</p>
+    </a>
+    <a href="./商城首页.html">
+        <img src="./img/store.png" alt="">
+        <p>商城</p>
+    </a>
+    <a href="">
+        <div><img src="./img/rz.png" alt=""></div>
+        <p>入住</p>
+    </a>
+    <a href="">
+        <img src="./img/order.png" alt="">
+        <p>订单</p>
+    </a>
+    <a href="">
+        <img src="./img/personal.png" alt="">
+        <p>我的</p>
+    </a>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="./swiper-4.5.0/swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script>
+    let myswiper = new Swiper('.swiper-container',{
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+</body>
+</html>

@@ -25,12 +25,12 @@ body {
     html {
         font-size: 55.2px; } }
 .header{
-    height: 0.88rem;
-    text-align: center;
-    font-size: 0.38rem;
-    line-height: 0.88rem;
-    color: #4ebbfe;
-}
+     height: 0.88rem;
+     text-align: center;
+     font-size: 0.38rem;
+     line-height: 0.88rem;
+     color: #4ebbfe;
+ }
 .search{
     padding: 0.17rem 0.22rem;
     height: 0.6rem;
